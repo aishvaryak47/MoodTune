@@ -29,6 +29,7 @@ _Add a screenshot here if available_
 1. Clone the repo or download ZIP
 2. Run `app.py` in Python
 3. Go to `localhost:5000` and enjoy your mood-matched playlist!
+4. http://127.0.0.1:5000/
 
 ---
 
