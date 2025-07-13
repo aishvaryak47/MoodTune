@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MoodTune - Emotion Playlist</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fdf1f1;
+            text-align: center;
+            padding: 50px;
+        }
+        .box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        input[type="file"] {
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #f06292;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>🎧 MoodTune</h1>
+        <p>Upload a photo to generate your emotion-based playlist!</p>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*" required><br>
+            <button type="submit">Detect Emotion</button>
+        </form>
+
+        {% if emotion %}
+            <h2>Detected Emotion: {{ emotion }}</h2>
+            {% if songs %}
+                <h3>Your Playlist:</h3>
+                <ul>
+                    {% for song in songs %}
+                        <li><strong>{{ song.name }}</strong> by {{ song.artist }}<br>
+                        <a href="{{ song.url }}" target="_blank">🎵 Listen on Spotify</a></li><br>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No songs found for this emotion.</p>
+            {% endif %}
+        {% endif %}
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
