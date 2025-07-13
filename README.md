@@ -32,7 +32,6 @@ _Add a screenshot here if available_
 
 ---
 
-[![Live Demo](https://img.shields.io/badge/Try%20Live%20🎧-MoodTune-blueviolet?style=for-the-badge)](https://moodtune.onrender.com)
 
 ## 👩‍💻 Built By:
 **Aishvarya Kannan**  
