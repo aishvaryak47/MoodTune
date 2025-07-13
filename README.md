@@ -20,7 +20,7 @@ AI-based Emotion-Aware Playlist Generator using Facial Expression Recognition an
 ---
 
 ## 📸 Preview:
-_Add a screenshot here if available_
+<img width="891" height="697" alt="image" src="https://github.com/user-attachments/assets/0507a355-c716-4652-8d07-e19a8dfafcec" />
 
 ---
 
